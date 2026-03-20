@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Contact Us | Hospital Management - Divyabharathi</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+    body { padding-top: 56px; }
+    footer { padding: 10px 0; background-color: black; }
+    .fa { padding: 20px; font-size: 23px; width: 60px; text-align: center; text-decoration: none; margin: 5px 2px; border-radius: 50%; }
+    .fa:hover { opacity: 0.5; }
+    .fa-facebook { background: #3B5998; color: white; margin-top: 30px; }
+    .fa-whatsapp { background: #25d366; color: white; }
+    .fa-twitter { background: #55ACEE; color: white; }
+    .fa-instagram { background: #125688; color: white; }
+    footer p { text-align: center; }
+    .contact-card { background: #f8f9fa; border-radius: 10px; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+    .success-msg { display: none; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background:#337AB7;">
+  <a href="index.html" class="navbar-brand">Hospital Management</a>
+  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+    <div class="navbar-nav">
+      <a href="admin.html" class="nav-item nav-link">Admin</a>
+      <a href="doctor.html" class="nav-item nav-link">Doctor</a>
+      <a href="patient.html" class="nav-item nav-link">Patient</a>
+    </div>
+    <div class="navbar-nav">
+      <a href="aboutus.html" class="nav-item nav-link">About Us</a>
+      <a href="contactus.html" class="nav-item nav-link active">Contact Us</a>
+    </div>
+  </div>
+</nav>
+
+<br><br>
+<center>
+  <h3 class='alert alert-info' style="margin-bottom:0px;">Contact Us !</h3>
+</center>
+<br>
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-7">
+      <div class="contact-card">
+        <h4 class="mb-4">Send a Message</h4>
+
+        <div class="alert alert-success success-msg" id="successMsg">
+          <strong>Thank you!</strong> Your message has been sent successfully.
+        </div>
+
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Your Name">
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Your Email">
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+        </div>
+        <button class="btn btn-primary btn-block" onclick="sendMessage()">Send Message</button>
+      </div>
+    </div>
+
+    <div class="col-md-4 mt-4 mt-md-0">
+      <div class="contact-card">
+        <h4 class="mb-4">Get in Touch</h4>
+        <p><i class="fa fa-github mr-2"></i> <a href="https://github.com/dbeediv" target="_blank">github.com/dbeediv</a></p>
+        <p><i class="fa fa-envelope mr-2"></i> divyabharathi@email.com</p>
+        <p><i class="fa fa-map-marker mr-2"></i> India</p>
+        <hr>
+        <h6>Follow Me</h6>
+        <a href="https://facebook.com/divyabharathi/" class="btn btn-sm btn-primary mr-1 mb-1"><i class="fa fa-facebook"></i></a>
+        <a href="https://instagram.com/divyabharathi" class="btn btn-sm btn-danger mr-1 mb-1"><i class="fa fa-instagram"></i></a>
+        <a href="https://twitter.com/divyabharathi" class="btn btn-sm btn-info mr-1 mb-1"><i class="fa fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br><br>
+
+<footer>
+  <p>
+    <a href="https://facebook.com/divyabharathi/" class="fa fa-facebook"></a>
+    <a href="https://instagram.com/divyabharathi" class="fa fa-instagram"></a>
+    <a href="https://twitter.com/divyabharathi" class="fa fa-twitter"></a>
+  </p>
+  <div class="container text-center" style="color:#fff;">
+    <p>Copyright &copy; 2024 Divyabharathi</p>
+  </div>
+</footer>
+
+<script>
+  function sendMessage() {
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
+    if (name && email && message) {
+      document.getElementById('successMsg').style.display = 'block';
+      document.getElementById('name').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('message').value = '';
+    } else {
+      alert('Please fill in all fields.');
+    }
+  }
+</script>
+
+</body>
+</html>

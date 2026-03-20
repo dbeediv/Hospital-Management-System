@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Hospital Management | Divyabharathi</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+    body { padding-top: 56px; }
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      background-image: url('static/images/bg.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      min-height: 400px;
+    }
+    .jumbotron h5, h3 { text-align: center; }
+    .alert { margin: 0px; }
+    .glow {
+      font-size: 50px;
+      color: white;
+      text-align: center;
+      -webkit-animation: glow 1s ease-in-out infinite alternate;
+      -moz-animation: glow 1s ease-in-out infinite alternate;
+      animation: glow 1s ease-in-out infinite alternate;
+    }
+    @-webkit-keyframes glow {
+      from { text-shadow: 0 0 10px #eee, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000, 0 0 50px #9554b3, 0 0 60px #9554b3, 0 0 70px #9554b3; }
+      to { text-shadow: 0 0 20px #eee, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6; }
+    }
+    .card-img-top { width: 100px; height: 100px; object-fit: cover; display: block; margin: 20px auto 0; border-radius: 50%; }
+    footer { padding: 10px 0; background-color: black; margin: 0px; }
+    .fa { padding: 20px; font-size: 23px; width: 60px; text-align: center; text-decoration: none; margin: 5px 2px; border-radius: 50%; }
+    .fa:hover { opacity: 0.5; text-decoration: none; }
+    .fa-facebook { background: #3B5998; color: white; margin-top: 30px; }
+    .fa-whatsapp { background: #25d366; color: white; }
+    .fa-twitter { background: #55ACEE; color: white; }
+    .fa-instagram { background: #125688; color: white; }
+    footer p { text-align: center; }
+    .screenshot-img { width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background:#337AB7;">
+  <a href="index.html" class="navbar-brand">Hospital Management</a>
+  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+    <div class="navbar-nav">
+      <a href="admin.html" class="nav-item nav-link">Admin</a>
+      <a href="doctor.html" class="nav-item nav-link">Doctor</a>
+      <a href="patient.html" class="nav-item nav-link">Patient</a>
+    </div>
+    <div class="navbar-nav">
+      <a href="aboutus.html" class="nav-item nav-link">About Us</a>
+      <a href="contactus.html" class="nav-item nav-link">Contact Us</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<div class="jumbotron" style="margin-bottom:0px; margin-top:0px;">
+  <br>
+  <h5 class="display-3 glow">You'll Love the Way We Care for You</h5>
+  <br><br><br><br><br>
+  <h3>Emergency ?</h3>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="patient.html" role="button">Take Appointment</a>
+  </p>
+  <br><br>
+</div>
+
+<br><br>
+
+<!-- Cards -->
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-4 mb-4">
+      <div class="card text-center shadow">
+        <img src="static/images/admin.png" class="card-img-top" alt="Admin">
+        <div class="card-body">
+          <h5 class="card-title">Admin</h5>
+          <p class="card-text">Manage doctors, patients and appointments.</p>
+          <a href="admin.html" class="btn btn-primary">Admin Panel</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card text-center shadow">
+        <img src="static/images/doctor.png" class="card-img-top" alt="Doctor">
+        <div class="card-body">
+          <h5 class="card-title">Doctor</h5>
+          <p class="card-text">View appointments and manage patients.</p>
+          <a href="doctor.html" class="btn btn-primary">Doctor Panel</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card text-center shadow">
+        <img src="static/images/patient.jpg" class="card-img-top" alt="Patient">
+        <div class="card-body">
+          <h5 class="card-title">Patient</h5>
+          <p class="card-text">Book appointments and view discharge details.</p>
+          <a href="patient.html" class="btn btn-primary">Patient Panel</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br><br>
+
+<!-- Screenshots Section -->
+<div class="container">
+  <h2 class="text-center mb-4">Screenshots</h2>
+  <div class="row">
+    <div class="col-md-6">
+      <img src="static/screenshots/homepage.png" class="screenshot-img" alt="Homepage">
+      <p class="text-center text-muted">Homepage</p>
+    </div>
+    <div class="col-md-6">
+      <img src="static/screenshots/admin_dashboard.png" class="screenshot-img" alt="Admin Dashboard">
+      <p class="text-center text-muted">Admin Dashboard</p>
+    </div>
+    <div class="col-md-6">
+      <img src="static/screenshots/admin_doctor.png" class="screenshot-img" alt="Admin Doctor">
+      <p class="text-center text-muted">Doctor Management</p>
+    </div>
+    <div class="col-md-6">
+      <img src="static/screenshots/invoice.png" class="screenshot-img" alt="Invoice">
+      <p class="text-center text-muted">Invoice / Bill</p>
+    </div>
+  </div>
+</div>
+
+<br><br>
+
+<!-- Footer -->
+<footer>
+  <p>
+    <a href="https://facebook.com/divyabharathi/" class="fa fa-facebook"></a>
+    <a href="https://api.whatsapp.com/send?phone=919572181024&text=Hello%20Divyabharathi." class="fa fa-whatsapp"></a>
+    <a href="https://instagram.com/divyabharathi" class="fa fa-instagram"></a>
+    <a href="https://twitter.com/divyabharathi" class="fa fa-twitter"></a>
+  </p>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div style="color:#ffffff;" class="footer-copyright">
+          <p>Made in India <br> Copyright &copy; 2024 Divyabharathi</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
